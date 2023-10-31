@@ -1,0 +1,11 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+}
+
+/* Set the background color of any other sections or elements to black or white depending on the desired contrast */
