@@ -1,138 +1,57 @@
-body {
+/*body*/
+
+body{
   background-color: white;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+/* header */
+header{
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+/* navbar */
+
+nav{
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  padding: 7px;
+}
+
+nav a:hover{
+  background-color: #ddd;
   color: black;
 }
 
-/* BEGIN: bg-animation */
-body {
-    background-image: linear-gradient(45deg, #000000 25%, transparent 25%, transparent 50%, #000000 50%, #000000 75%, transparent 75%, transparent);
-    background-size: 50px 50px;
-    animation: animateBg 5s linear infinite;
-}
-
-@keyframes animateBg {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 50px 50px;
-    }
-}
-/* END: bg-animation */
-
-header {
-  background-color: black;
-  color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  animation: slideDown 1s ease-in-out;
-}
-
-
-header a {
-  transition: color 0.5s ease-in-out;
-}
-
-header a:hover {
-  color: #f0f0f0; /* Change this to the color you want on hover */
-}
-nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: black;
-  align-items: center;
-  color: white;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-#menu li {
-    font-weight: bold; /* Change this to the font weight you want for the navigation menu items */
-}
-
-#menuToggle {
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-}
-
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 2;
-  -webkit-touch-callout: none;
-}
-#menuToggle input:checked ~ ul {
-  background-color: #000000; /* Change this to the color you want for the active navigation menu */
-}
-#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #4c4085;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-}
-
-#menu {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #ededed;
+nav ul{
   list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  margin: 0;
+  padding: 0;
 }
 
-#menu li {
-  padding: 10px 0;
-  font-size: 30px;
-  font-family: Arial, sans-serif;
+nav li{
+  display: inline;
 }
-
-#menuToggle input:checked ~ ul {
-  transform: none;
+/* main */
+article{
+  background-color: #f1f1f1;
+  padding: 15px;
+  text-align: left;
 }
+/* footer */
 
-nav a {
+footer{
+  background-color: #333;
   color: white;
-  text-decoration: none;
-  transition: color 0.5s ease-in-out;
-  padding: 10px 20px;
-}
-
-nav a:hover {
-  color: #690303; /* Change this to the color you want on hover */
-}
-@keyframes slideDown {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@media (max-width: 600px) {
-  nav {
-    justify-content: center;
-  }
+  padding: 15px;
+  text-align: center;
 }
