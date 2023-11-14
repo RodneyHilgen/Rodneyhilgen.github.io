@@ -6,21 +6,34 @@
     <title>My Portfolio</title>
   </head>
   <body>
+    <div class="main-container">
+      <!--header section starts -->
+
     <header>
-      <nav>
-        <div id="menuToggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul id="menu">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <section class="nav">
+      <!--logo insert-->
+
+      <div class="logo">
+        <h2 class="logo">Rod<span>ney</span></h2>
+      </div>
+
+      <!-- checkbox to control the icon's state  -->
+      <input id="menu-toggle" type="checkbox" />
+      <label for="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+    </label>
+     <!--  main menu    -->
+     <ul class="menu">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact me</a></li>
+  </ul>
+</section>
     </header>
+
+     <!-- header section ends -->
 
     <main>
       <section id="about">
@@ -66,4 +79,6 @@
       <p>Copyright © Rodney Frederik Hilgen</p>
     </footer>
   </body>
+<script src="/JS/script.js"></script>
+
 </html>
