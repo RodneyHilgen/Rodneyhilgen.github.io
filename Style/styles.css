@@ -1,55 +1,60 @@
 /*body*/
 
-body{
-  background-color: #1E1E1E;
+body {
+  background-color: #1e1e1e;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* header */
-header{
-  background-color: #1E1E1E;
+header {
+  background-color: #1e1e1e;
   color: white;
   padding: 15px;
   text-align: center;
 }
 /* navbar */
 
-nav{
+nav {
   background-color: #333;
   color: white;
   padding: 15px;
   text-align: center;
 }
 
-nav a{
+nav a {
   color: white;
   text-decoration: none;
   padding: 7px;
 }
 
-nav a:hover{
+nav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav li{
+nav li {
   display: inline;
 }
 /* main */
-article{
+article {
   background-color: #f1f1f1;
   padding: 15px;
   text-align: left;
 }
+
+#about {
+  padding: 15px;
+  text-align: center;
+}
 /* footer */
 
-footer{
+footer {
   background-color: #333;
   color: white;
   padding: 15px;
