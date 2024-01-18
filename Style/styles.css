@@ -1,8 +1,9 @@
 /*body*/
 body {
-  background-color: #1e1e1e;
+  background: rgb(2,1,18);
+  background: linear-gradient(180deg, rgba(2,1,18,1) 53%, rgba(84,83,96,1) 100%); 
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 /* header */
 header {
@@ -15,7 +16,7 @@ header {
 img {
   border-radius: 50%;
   display: block;
-  width: 8%;
+  width: 12%;
   right: 16px;
   position: absolute;
 }
@@ -60,23 +61,45 @@ article {
   padding: 15px;
   text-align: center;
   flex: 1;
+  width: 50%;
+  margin: auto;
 }
 
 #projects {
   text-align: center;
   padding: 15px;
+  width: 50%;
+  margin: auto;
+
+
 }
 
 #learned {
   text-align: center;
   padding: 15px;
   flex: 1;
+  margin: auto;
 }
 
 #email {
   text-align: center;
+  margin: auto;
+}
+.email-link {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0c0c0c;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
+.email-link:hover {
+  background-color: #00000032;
+}
 /* buttons */
 .button {
   display: inline-block;
@@ -84,7 +107,7 @@ article {
   font-size: 16px;
   text-align: center;
   text-decoration: none;
-  background-color: #490909;
+  background-color: #0c0c0c;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -93,7 +116,7 @@ article {
 }
 
 .button:hover {
-  background-color: #181717;
+  background-color: #00000032;
 }
 /* Social links */
 .social-buttons {
@@ -107,7 +130,7 @@ article {
   display: inline-flex;
   align-items: center;
   padding: 10px;
-  background-color: #461010;
+  background-color: #0c0c0c;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -121,7 +144,7 @@ article {
 }
 
 .social-button:hover {
-  background-color: #101010; /* Change the hover background color as needed */
+  background-color: #00000032;
 }
 
 @media (max-width: 768px) {
@@ -133,8 +156,7 @@ article {
 
 /* footer */
 
-footer {
-  background-color: #333;
+footer {  
   color: white;
   padding: 15px;
   text-align: center;
