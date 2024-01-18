@@ -30,6 +30,9 @@ body {
   background-color: #1e1e1e;
   color: white;
   font-family: "Roboto", sans-serif;
+  text-align: center  ;
+  margin: auto;
+  
 }
 /* header */
 header {
@@ -38,6 +41,16 @@ header {
   padding: 15px;
   text-align: center;
 }
+/* images */
+img {
+  border-radius: 50%;
+  display: block;
+  width: 8%;
+  right: 16px;
+  position: absolute;
+  
+}
+
 /* navbar */
 
 nav {
