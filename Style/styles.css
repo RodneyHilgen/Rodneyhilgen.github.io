@@ -1,37 +1,8 @@
-/* FONTS FROM GOOGLE */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-/*================ Variables CSS ============*/
-:root {
-  /*========= Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*
-     Gray: hsl(0, 0%, 21%)
-     Red: hsl(0, 60%, 25%)
-     */
-
- --hue: 0
- --sat: 0%
- --lig: 21%
-
- --first-color: hsl(var(--hue), var(--sat), var(--lig))
- --first-color
-}
-
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 /*body*/
-
 body {
   background-color: #1e1e1e;
   color: white;
   font-family: "Roboto", sans-serif;
-  text-align: center  ;
-  margin: auto;
   
 }
 /* header */
@@ -48,7 +19,7 @@ img {
   width: 8%;
   right: 16px;
   position: absolute;
-  
+
 }
 
 /* navbar */
@@ -90,7 +61,60 @@ article {
 #about {
   padding: 15px;
   text-align: center;
+ flex: 1;
 }
+
+#projects {
+text-align: center;
+padding: 15px;
+white-space: -2px;
+}
+
+#learned {
+  text-align: center;
+  padding: 15px;
+  flex: 1;
+}
+
+#email {
+  text-align: center;
+}
+/* Social links */
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #461010;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.social-button i {
+  margin-right: 5px;
+}
+
+.social-button:hover {
+  background-color: #101010; /* Change the hover background color as needed */
+}
+
+@media (max-width: 768px) {
+  .social-buttons {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
 /* footer */
 
 footer {
