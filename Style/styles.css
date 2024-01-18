@@ -3,7 +3,6 @@ body {
   background-color: #1e1e1e;
   color: white;
   font-family: "Roboto", sans-serif;
-  
 }
 /* header */
 header {
@@ -19,7 +18,6 @@ img {
   width: 8%;
   right: 16px;
   position: absolute;
-
 }
 
 /* navbar */
@@ -61,13 +59,12 @@ article {
 #about {
   padding: 15px;
   text-align: center;
- flex: 1;
+  flex: 1;
 }
 
 #projects {
-text-align: center;
-padding: 15px;
-white-space: -2px;
+  text-align: center;
+  padding: 15px;
 }
 
 #learned {
@@ -78,6 +75,25 @@ white-space: -2px;
 
 #email {
   text-align: center;
+}
+
+/* buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #490909;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #181717;
 }
 /* Social links */
 .social-buttons {
@@ -110,8 +126,8 @@ white-space: -2px;
 
 @media (max-width: 768px) {
   .social-buttons {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
